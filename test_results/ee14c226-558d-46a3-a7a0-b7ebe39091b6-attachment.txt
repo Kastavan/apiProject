@@ -1,0 +1,37 @@
+POST method
+https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+{"status":"OK","place_id":"15d038b2a01e13954ff4cb0ea2ebf477","scope":"APP","reference":"37f48b35b80f0211b9807632f221991937f48b35b80f0211b9807632f2219919","id":"37f48b35b80f0211b9807632f2219919"}
+Success!! Status code = 200
+All fields present
+status correct!
+GET-POST method
+https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=15d038b2a01e13954ff4cb0ea2ebf477
+{"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Frontline house","phone_number":"(+91) 983 893 3937","address":"29, side layout, cohen 09","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
+Success!! Status code = 200
+All fields present
+address correct!
+PUT method
+https://rahulshettyacademy.com/maps/api/place/update/json?key=qaclick123
+{"msg":"Address successfully updated"}
+Success!! Status code = 200
+All fields present
+msg correct!
+GET-PUT method
+https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=15d038b2a01e13954ff4cb0ea2ebf477
+{"location":{"latitude":"-38.383494","longitude":"33.427362"},"accuracy":"50","name":"Frontline house","phone_number":"(+91) 983 893 3937","address":"100 Lenina street, RU","types":"shoe park,shop","website":"http:\/\/google.com","language":"French-IN"}
+Success!! Status code = 200
+All fields present
+address correct!
+DELETE method
+https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+{"status":"OK"}
+Success!! Status code = 200
+All fields present
+status correct!
+GET-DELETE method
+https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=15d038b2a01e13954ff4cb0ea2ebf477
+{"msg":"Get operation failed, looks like place_id  doesn't exists"}
+Success!! Status code = 404
+All fields present
+Word failed present!
+Testing of create, update, and delete new location complete successfully
