@@ -15,7 +15,6 @@ class Checking:
         else:
             print("Fail!! Status code = " + str(response.status_code))
 
-
     """Method to check required fields in request response"""
     @staticmethod
     def check_json_token(response: Response, expected_value):
